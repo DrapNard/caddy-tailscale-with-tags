@@ -1,10 +1,6 @@
 // Copyright (c) Tailscale Inc & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-// Patched by Replit to support tagged nodes in tailscale_auth.
-// Upstream rejects all tagged nodes; this version exposes tags as metadata
-// so Caddy expressions can match on {http.auth.user.tailscale_tags}.
-
 package tscaddy
 
 // auth.go contains the TailscaleAuth module and supporting logic.
@@ -177,6 +173,7 @@ func (ta Auth) Authenticate(w http.ResponseWriter, r *http.Request) (caddyauth.U
 			"tailscale_name":            info.UserProfile.DisplayName,
 			"tailscale_profile_picture": info.UserProfile.ProfilePicURL,
 			"tailscale_tailnet":         tailnet,
+			"tailscale_tags":            "",
 		}
 	}
 
