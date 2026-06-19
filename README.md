@@ -34,7 +34,7 @@ In those cases, this plugin may be helpful.
 Use [xcaddy](https://github.com/caddyserver/xcaddy) to build Caddy with the Tailscale plugin included.
 
 ```sh
-xcaddy build v2.9.1 --with github.com/tailscale/caddy-tailscale
+xcaddy build v2.9.1 --with github.com/DrapNard/caddy-tailscale-with-tags
 ```
 
 Alternatively, you can build the included `cmd/caddy` package, or create your own similar package:
@@ -180,7 +180,7 @@ For Caddy [JSON config], add the `tailscale` app with fields from [tscaddy.App]:
 [auth key]: https://tailscale.com/kb/1085/auth-keys/
 [oauth client secret]: https://tailscale.com/kb/1215/oauth-clients#register-new-nodes-using-oauth-credentials
 [JSON config]: https://caddyserver.com/docs/json/
-[tscaddy.App]: https://pkg.go.dev/github.com/tailscale/caddy-tailscale#App
+[tscaddy.App]: https://pkg.go.dev/github.com/DrapNard/caddy-tailscale-with-tags#App
 
 ### Logging
 

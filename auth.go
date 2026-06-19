@@ -46,7 +46,7 @@ func (Auth) CaddyModule() caddy.ModuleInfo {
 // ok indicates if a tsnetListener was found.
 //
 // In the future consider alternative approach if Caddy supports unwrapping listeners.
-// See discussion in https://github.com/tailscale/caddy-tailscale/pull/70
+// See discussion in https://github.com/DrapNard/caddy-tailscale-with-tags/pull/70
 func findTsnetListener(ln net.Listener) (_ tsnetListener, ok bool) {
 	if ln == nil {
 		return nil, false

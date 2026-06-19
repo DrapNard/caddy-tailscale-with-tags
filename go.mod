@@ -1,4 +1,4 @@
-module github.com/tailscale/caddy-tailscale
+module github.com/DrapNard/caddy-tailscale-with-tags
 
 go 1.25.3
 
